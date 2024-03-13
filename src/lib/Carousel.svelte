@@ -26,9 +26,8 @@
         <img
         src={image}
         alt={`Image ${i + 1}`}
-        class="{i === CurrentIndex ? 'block' : 'hidden'} 
-        transition-opacity duration-500 absolute w-full h-72 object-cover opacity-
-        {i === CurrentIndex ? '100' : '0'}"
+        class="{i === CurrentIndex ? 'block' : 'hidden'} absolute w-full h-72 object-cover
+        py-16 px-4"
     />
     {/each}
 
