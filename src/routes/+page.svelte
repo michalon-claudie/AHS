@@ -3,9 +3,8 @@
     import Footer from "$lib/Footer.svelte"
 </script>
 
-<div class="bg-black">
+<div class="bg-black text-white">
     <Navbar/>
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    <h1 class="text-3xl">Hello world</h1>
     <Footer/>
 </div>

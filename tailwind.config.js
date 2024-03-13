@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.export = {
-  content: [],
+module.exports = {
+  content: [
+    './src/**/*.{svelte, html, js}'
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,6 +16,11 @@ module.export = {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     },
   },
   plugins: [],
