@@ -3,12 +3,6 @@
     import Footer from "$lib/Footer.svelte"
 </script>
 
-<style>
-    @import 'tailwindcss/base';
-    @import 'tailwindcss/components';
-    @import 'tailwindcss/utilities';
-  </style>
-
 <div class="bg-black">
     <Navbar/>
     <h1>Welcome to SvelteKit</h1>
