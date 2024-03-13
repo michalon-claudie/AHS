@@ -2,11 +2,11 @@
     import Logo from '../ahs.webp'
 </script>
 
-<nav class="flex justify-end gap-3">
-    <a class="flex w-1/12" href="/">
+<nav class="flex justify-end gap-3 items-center">
+    <a class="flex w-1/12 transition duration-300 hover:-translate-y-3" href="/">
         <img src={Logo} alt="logo"/>
     </a>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="last_news">What's New</a>
+    <a class="transition duration-300 hover:-translate-y-3" href="/">Home</a>
+    <a class="transition duration-300 hover:-translate-y-3" href="/about">About</a>
+    <a class="transition duration-300 hover:-translate-y-3" href="last_news">What's New</a>
 </nav>
