@@ -21,20 +21,21 @@
     });
 </script>
 
-<section class="relative">
+<section class="relative" data-testid="Carousel">
     {#each images as image, i}
         <img
         src={image}
         alt={`Image ${i + 1}`}
         class="{i === CurrentIndex ? 'block' : 'hidden'} absolute w-full h-72 object-cover
         py-16 px-4"
+        data-testid="carousel-image"
     />
     {/each}
 
     <button class="absolute top-1/2 transform -translate-y-1/2 left-4" on:click={previousImages}>
         Précédent
     </button>
-    <button class="absolute top-1/2 transform -translate-y-1/2 right-4" on:click={nextImages}>
+    <button class="absolute top-1/2 transform -translate-y-1/2 right-4" on:click={nextImages} data-testid="nextButton">
         Suivant
     </button>
 </section>
